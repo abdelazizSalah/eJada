@@ -71,7 +71,7 @@
 * Activities: el 7agat elly btt3ml fl campaign, zy el calls aw el mails aw meetings aw keda. 
 * Leads: el nas el gom nategt el campaign, fa homa mkanosh records 3ndk fl system bs b3d el campaign etdafo. 
 * campaignActivities: de el activities el marbota bl campaign baa, w feha hagat marbota aktur baa b ay haga feha flos w more official. 
-* Financials: 
+# Financials: 
   * Activity cost: total cost of the campaign (summation of campaign activities costs.)
   * allocated budget: enta kont 3amel 7sabk 3la budget ad a. 
   * Miscelenous cost: de flos tel3t fag2a fe nos el campaign keda 
