@@ -63,6 +63,9 @@
         * Clogged drain
         * General (others).
       * Case type:  no3 el case, w de haga mmkn ab2a a3dlha.
+        * Question
+        * Problem
+        * Request
       * Contact: 
       * Assign to others: 7d tany hwa elly el mfrod yshof el mwdo3 da.
       * Parent case: aknk btrbot el case de b case adema msln, aw two cases bytklmo 3n nfs el subject fa brbothom bb3d. 
