@@ -1,4 +1,4 @@
-# Sales Cycles note
+# Sales Cycle notes
 * lw ana sherka kbera, fa el nas btdkhul 3la el website bta3y 34an yshofo el products elly ana bab3hom aw b2dmhom. 
 * aw ana 3ndy call center bybd2o yeklmo el nas 34an y3rfhom ehna bn3ml a. 
 * aw bnzl post 3la el social media 34an y3rfhom ehna bn3ml a, w hakaza. 
@@ -22,9 +22,20 @@
 * fa ehna dayman bn7awl n7afez 3la el 3amel bta3na (custom)
 * 3ndna timeline byzhr feh el activities bta3t el leads da. 
 * lw hwa kan ragel mo7trm w ad klamo, fa ana bkml m3ah w ados 3la qualified. 
-* lw hwa mknsh kwys, fa bn3ml disqualified lead,  w lazm n7ot el reason baa, hal lost, wla canceled, wla a bzbt. 
+* lw hwa mknsh kwys, fa bn3ml disqualified lead,  w lazm n7ot el reason
+  * hal lost -> m2drtsh akn3o,
+  * canceled -> laghetha 34an hwa reg3 fe klamo aw haga zy keda,
+  * No longer interested -> hwa mb2ash mohtm.
+  * can not contact -> msh byrod 3lena. 
 
 # Develop
+* bndkhol hena lw 3mlna qualify lel lead. 
+* consists of 5 main tabs
+  * Summary
+  * Products
+  * Qoutes
+  * Files
+  * Related. 
 1. Summary: 
    * opportunity information: fa bnbd2 n7ot 7agat mo3yna zy msln el budget amount: m3ah flos ad a. 
    * purchase timeframe: hwa 3auz yeshtry emta el sanady wla el gaya wla nos el sana de wla emta bzbt. 
@@ -34,8 +45,12 @@
      * Unknown: 
    * forecast category:  // bntnb2 el safka de nag7a bnsbt ad a
      * Best case: de m3naha 7d ana mot2kd eno hykml m3aya 
-     * search for others. 
-2. Products: 
+     * Pipeline: enta msh mot2kd enk hat2dr enk teksb el opportunity de, fa de ay opportunity bnbd2ha, mmkn fl awl t3tbr enha fl pipeline 3ady
+     * Committed: khlas el customer eshtra  meny w han2fl el safka. 
+     * Omitted: bastb3do.
+     * Won: khlas enta ksbt el safka w el ragel eshtra meny fe3ln, w de mbn3mlhash manually, de lama enta bt5ls el cycle, hya lw7dha btro7 tt3ml won. 
+     * lost: khesrt el 3amel w msh h3ml l safka khlaas, bardo msh bn5tarha manually.  
+1. Products: 
    * byb2a 7aga mn etnen: // byb2o mwgoden fl product catalog.  
      * Products:
        * indvidual product.
@@ -43,23 +58,34 @@
        * family: product leh kaza no3. 
        * existing product: da product mwgod 3ndy fl system. 
        * write in product: da product b3mlo creation natega lel opportunity elly ana b3mlha, w brbto bl opportunity da bs w msh byb2a mwgod 3ndy fl system, w mynf34 test5dmo fe opportunity tanyya.  
-     * Services:
+     * Services
+     * we have multiple options: 
+       * Add Product
+       * Add Bundle
+       * Add Family
+     * kol product byb2a leh unique ID w da 34an b5zno fl database bt3ty w byb2a leh primary key. 
      * b3d keda bt3ml create new product, w gowah btbd2 baa tedy more details: 
        * Unit group: htbe3 el haga ezay, hl htbe3ha bl piece, wla box, wla ezay. 
        * Parent: da 34an adef el product da fe product family.
        * Valid from: el item da mota7 3ndk fl sherka mn emta
        * Valid to: le emta baa. 
-       *  default price List: de b7ot feha se3r el kemya el ana hbe3ha, fa mmkn abe3 5 mraw7 be 5000 m3 en el peice el wahda kant b 1200 masln. 
+       *  **default price List**: de b7ot feha se3r el kemya el ana hbe3ha, fa mmkn abe3 5 mraw7 be 5000 m3 en el peice el wahda kant b 1200 masln.
+       *  w mmkn a3ml price list m5sosa lel montag aw lel customer da, w bdeha el name wl start wl end dates wl currency w description w keda baa.  
        *  Currency: leh no3en
           *  transaction currency: de currency bkon msln bashtry 7aga mn el so3odya fa bshtreha bl ryal bdl el gneh, fa el ryal bykon transaction. 
           *  buying currency: da el currency bta3y el ana aslun bt3aml beh dayman zy msln el egyption pound.
        * Discount list: de akny 3auz a3ot discount 3la kol el montgat bt3ty.
        * quantity selling option: // habe3 le men
+         *  select whether the product or service can be ordered in whole, partial, or both types of quantities. This information is used in the Quantity field of Quote Product, Order Product, and Invoice Product records.
+         *  Whole -> btb3ha 3la b3dha mfesh tagzee2. 
+         *  Whole and Fraction -> mmkn 3la b3dha w mmkn tgz2ha. 
+         *  no control -> mfesh condition. 
          * retail(no Control): da shakhs d5l 3la el website w 3ayz yeshtry haga
          * wholesale: da tager msln w 3auz yeshtry bkmyat kbera 34an yb3ha fl so2 lel customer elly fl share3
          * distributor: da byb2a zy smsar msln, fa 3ndo msln m7l soghyr, fa byakhod el montag bta3k w ybe3o 3ndo bs3r msln 5000 gneh bs enta btdelo el montg b 4000 gneh.
-   * Revenue: de b5ly el system hwa el y3ml calculate lel 7sabat bt3ty 3n tre2 a5tar option System calculated.
-   * 
+   * Revenue:
+     * System Calculated: de b5ly el system hwa el y3ml calculate lel 7sabat bt3ty 3n tre2 a5tar option System calculated.
+     * User Provided: el agent hwa el hydkhl el se3r. 
 
 # Clone
 * da m3nah enk 3auz takhud nfs el details bta3t item tany msln, bs 3auz t3dl 3leh shwyt tfasel.
@@ -85,14 +111,21 @@
 * DataType: Singe line of text/ whole number w hakza. 
 
 
-# Pricing method: 
+# Pricing method: (Inside New Price list page) 
 * Currency Amount: el s3r zy ma howa
 * Percent of list: eny 3auz abe3 el product da akno nesba mn kaymt el as3ar, fa msln lw 3ndy list feha 4 montgat, fa ana 7ateet feh mrw7a msln, w 3auz el mrw7a tkon 40% mn se3r kaymet el as3ar de. 
-* Percent Markup: btshof el kema el fe3lya lel montg (+ el drayb w msaref el sha7n w keda) w bt7ot 3leha percent.
+* Percent Markup - Current cost: btshof el kema el fe3lya lel montg (+ el drayb w msaref el sha7n w keda) w bt7ot 3leha percent.
+  * calculated price = current cost x 100% + percentage
 * Percent Margin - Current cost: da baye3 m3ndosh selslt m7lat, da by5os el semsar, lakn hwa bya5ud el montg menk bse3r el enta btbe3o w hwa y7ot 3leh margin leh (2000 gneh msln) w ybe3o b se3rk + el margin. 
+  * calculated price = current cost + [(current cost x percentage)/ (100% - percentage)]
 * Percent Markup - Standard cost: da el montg met5zn b2alo kter msln fe el sherka aw keda, fa bybd2 yerg3 el montg le se3ro el asly, w ybe3o bnsbt reb7 as8r shwya 34an my5srsh kter.  
+  * calculated price = standard cost x 100% + percentage 
 * Percent Margin -- Standard cost: 
+  * calculated price = standard cost + [(standard cost x percentage)/(100% - percentage)]
 
+
+* margin => hwa hamsh el reb7 bta3k -> fa enta btshof el (sales - cost of goods)
+* markup => hwa enk btzwd se3r el product bnsbt ad a 34an takhud arba7, fa msln bnzwd 20% 3la el se3r el asly 34an aksb w keda.
 * markup --> shakhs 3ndo selslt m7lat.
 * margin --> semsar.
 
@@ -131,9 +164,10 @@
 * khlas enta keda khlst el order fa 3auz t2flo baa fa bt3ml status reason : won
 * w t7ot el date of won w keda done.   
 
-# Status of Order
-* partial: etwafe2 3leh bshkl goz2y, fa hwa kan taleb 20 item bs 2ly l2 eb3tly 10 bs fa kda partial acceptance. 
-* Complete: etwafe2 3leh kolo. 
+# Fullfill Order
+* Status of Order
+  * partial: etwafe2 3leh bshkl goz2y, fa hwa kan taleb 20 item bs 2ly l2 eb3tly 10 bs fa kda partial acceptance. 
+  * Complete: etwafe2 3leh kolo. 
   
 # inVoice (Fatora)
 * lazm lama akhls kol da atb3 fatora lel user 34an yeb2a feha kol el details bta3t order da.  
