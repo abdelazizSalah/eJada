@@ -13,6 +13,8 @@
   
 
 * what is the configuration page, and what is the version.
+  * it is a link to a configuration page related to this solution.
+  * version is the version of the solution, as we can have multiple versions each one contains differnet updates... 
 
 * read more about the managed and the unmanaged solution. 
   * before talking about the managed and the unmanaged, lets talk about the solution.
