@@ -94,7 +94,8 @@
 * Look-up when created it creates another element in the choosen value, what it is -> **SubGrid.**
 * No3od nel3b fe el app, 34an nefhm el donya. 
 
-
+# solution layers
+* dol 3bara 3n layers fo2 b3d, kol wahda fehom 3bara 3n solution. 
 # Task 
 * create an entity.
 * create two look-ups. 
