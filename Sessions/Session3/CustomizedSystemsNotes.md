@@ -5,7 +5,7 @@
 * el solution da akno project khlsan, enk kont shghal 3la system le mostshfa msln, wnta 3mltha w  zwdt entities w keda, fa keda da esmo solution w enta esmk publisher. 
 * kol publisher byb2a leh prefix mo3yn 34an lw 3auz ast5dmo.
 * mmkn ne3ml t3del 3la el default el mwgod, aw mmkn n3ml wahed gded. 
-* el publisher byb2a 3bara 3n 
+* el publisher byb2a 3bara 3n shakhs by3ml solution w ynzlo 34an lw 7d 3auz yest5dm ready made solution, yro7 yshtreh meno 3la toul, w yeksb w2t.  
 * el out of the box hwa el esm elly mlhosh prefix. 
 * el out of the box dol el 7agat elly mwgoda fl system. 
 * el customized dol el 7agat elly ana 3amelha. 
