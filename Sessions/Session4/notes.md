@@ -62,3 +62,7 @@
     * f
   * Personal view:
     * we should nkno
+  
+# Business rule
+* de 7aga bn3mlha 34an ne2dr n7ot conditions 3la el inserted fields wenta bt3ml creation lehom.
+* w btb2a marbota b kol  entity. 
