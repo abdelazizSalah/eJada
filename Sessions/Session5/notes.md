@@ -74,6 +74,57 @@
   * bngm3 data 3n el record da. 
 * workflow 
   * 7aga bt3tmd 3la 7aga bt3tmd 3la 7aga, fa btshghl 7aga. 
-* action step 
+  * its details:
+    * Stage entry: m3 byadt el stage.
+    * stage exit: m3 nhayt el stage. 
+* action step:
+  * de el action process elly 3ndy.
+  * action y3ny awl ma el entity y7slo trigger, el action da yet3ml. 
+  * zy enk ttl3 pop up window msln.
 * flow step:
-  * 
+    * de business process flow, ana kont 3mlha abl keda, w 3auz adomha 3la el business process flow elly b3mlha delw2ty baa. 
+
+# Order Processes
+* de bt2oly men yezhrly el awl, lama adkhul 3la el account da aw 3la el entity baa el enta kont shaghal 3leha.
+* b7es lw 3ndk multiple items, aw multiple processes, fa bn7ot men yezhrly el awwl w keda, wbn7ot e7na baa el trteb bta3na. 
+
+# Web resources:
+* it is our java script. 
+* da byb2a 3bara 3n URL shayl el script bta3k, elly feh el functions elly mktoba bl js w enta 3auz tnfzha 3la form mo3yna
+* go to customization
+* default solution
+* web resources
+* create new baa aw e5tar baa
+  
+# General script
+* bngm3 feh el functions el general, elly mmkn nst5dmha fe kol haga fl system. 
+* w de ne2dr ntbha 3la kol el forms. 
+
+
+# Form script
+* enta m3 kol project, btakhud kol el scripts elly 3mltha fll mshare3 el adema elly 3ndk, 34an lw 3auz tb2a tstkhdmha tany. 
+* good practice is to make both name and displayName 
+* 34an 
+
+# Form Properties
+* de bn3dl feha 34an ne2dr ennha n7ot el web resources. 
+* bnft7 el form mn ay entity
+* w ndos 3la el form properties, de btb2a fo2 gmb business rules. 
+* w byb2a 3ndk baa el libraries, de elly enta btkon aslun 3amelha w 7atet gowaha el functions wl scripts
+
+# Event handler
+* hna by2olk hattsrf m3 el event ezay.
+* fa 3ndk events
+  * OnLoad: kol mara ye7sl load l7aga haynfz el functions elly enta e5trtha. 
+  * OnSave: kol mara t3ml save hayro7 yendh el function elly enta e5trtha. 
+  * OnChange: kol mara y7sl ay change fe el field da haro7 andh el function elly enta e5trtha.
+
+
+# JavaScriptNotes
+* bnst5dm 7aga esmha Xrm.Page de 34an te2dr te3ml access lel items elly gowa el form
+* w hwa by3rf, 34an enta aslun bt3mlo include gowa el form fhwa byfhm hwa shghal fen. 
+* executionContext:
+  * el js engine hwa elly by3mlha 34an yeb2a 3auz ye3rf ezay ye3ml t7welat 3ndk. 
+  * fa hwa mmkn ykon by7aded ad a memory el system bta3k me7tago w yebd2 baa ye7gz kol da lel system bta3k. 
+  * lazm ab3to fe el function ka first parameter .
+  
