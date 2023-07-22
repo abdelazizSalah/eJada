@@ -1,4 +1,4 @@
-# Javascript notes 
+# Javascript notes (similar to business rules)
 * Xrm -> el page elly shghalen beha. 
 * .getAttribute('attribute name') -> returns the value corresponds to this value. 
 * .setRequiredLevel -> bt2oly el field required wla laa. 
