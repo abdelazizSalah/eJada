@@ -31,3 +31,15 @@
 * ![Alt text](image-1.png)
 * ![Alt text](image-2.png)
 * ![Understand the Client API object model](image-3.png)
+
+
+# References 
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/events-forms-grids?tabs=add-event-handlers-legacy#add-or-remove-event-handler-function-to-event-using-code
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/clientapi-execution-context?tabs=pass-execution-context-legacy
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/understand-clientapi-object-model
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/clientapi-xrm#xrm-object-model
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/clientapi-xrm
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openalertdialog
+* https://learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/customize/form-properties-legacy?view=op-9-1
+* https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openerrordialog
