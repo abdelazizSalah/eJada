@@ -1,21 +1,34 @@
 // Valid website script
-function websiteValidator() {
-    var website = Xrm.Page.getAttribute('websiteurl').getValue();
+function websiteValidator(executionContext) {
+    // create form object
+    var formContext = executionContext.getFormContext();
+
+
+    var website = formContext.getAttribute('websiteurl').getValue();
     const errorOptions = {
         details: "The inserted URL is not correct\nPlease make sure that you follow this format www.(YourWebsiteName).(YourHostName)",
         errorCode: -1,
         message: 'Correct the URL and try again'
     };
 
-    if (website != null) {
+    if (website !== null) {
+        // Xrm.Navigation.openErrorDialog(errorOptions).then(
+        //     function (success) {
+        //         console.log("Error dialog closed");
+        //     },
+        //     function (error) {
+        //         console.log(error.message);
+        //     }
+        // );
         // regex checker. 
         const regex = RegExp('^www\.[a-zA-Z]+\.(com|org|net)$');
-        let valid = regex.test(url);
+        let valid = regex.test(website);
         if (valid)
-            return true;
+            // return true;
+            console.log("valid");
         else {
             // I would prefer showing an error dialog instead of an alert dialog
-            Xrm.Navigation.openErrorDialog(alertStrings, alertOptions).then(
+            Xrm.Navigation.openErrorDialog(errorOptions).then(
                 function (success) {
                     console.log("Error dialog closed");
                 },
@@ -23,21 +36,25 @@ function websiteValidator() {
                     console.log(error.message);
                 }
             );
-            return false;
+            // return false;
         }
     }
 };
 
-function mustProvidePhoneNumber() {
+function mustProvidePhoneNumber(executionContext) {
+    // create form object
+    var formContext = executionContext.getFormContext();
+
     // define the utility items for alert dialog
-    const alertStrings = { confirmButtonLabel: "OK", text: "The inserted URL is not correct\nPlease make sure that you follow this format www.(YourWebsiteName).(YourHostName)" };
+    const alertStrings = { confirmButtonLabel: "OK", text: "You must insert a phone number." };
     const alertOptions = { height: 120, width: 260 };
 
     // get the phone number
-    let phoneNumber = Xrm.page.getAttribute('telephone1').getValue();
+    let phoneNumber = formContext.getAttribute('telephone1').getValue();
 
-    if (phoneNumber != null && phoneNumber != '') {
-        return true;
+    if (phoneNumber !== null && phoneNumber !== '') {
+        console.log("Provided a phone number");
+        // return true;
     } else {
         Xrm.Navigation.openAlertDialog(alertStrings, alertOptions).then(
             function (success) {
@@ -47,7 +64,7 @@ function mustProvidePhoneNumber() {
                 console.log(error.message);
             }
         );
-        return false;
+        // return false;
     }
 }
 
