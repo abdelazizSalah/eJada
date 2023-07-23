@@ -1,5 +1,6 @@
 # Javascript notes (similar to business rules)
 * Xrm -> el page elly shghalen beha. 
+* ![Alt text](image.png)
 * .getAttribute('attribute name') -> returns the value corresponds to this value. 
 * .setRequiredLevel -> bt2oly el field required wla laa. 
 * 173030075 -> da id by-map l esm mwgod fe option set. (da el value bta3 el item da fl option set)
@@ -16,3 +17,17 @@
 * to reload the page we use the refresh function
   * Xrm.Page.data.refresh();
 * alert('Alert Message') -> this is an alert function used to alert the user of doing something wrong.
+
+
+# How can we create a new script to be ran. 
+* open any entity. 
+* open form
+* then press on Form Properties. 
+* then select events. (it should be the default page). 
+* if you have existing library, select it from the Form Libraries section, else you can press **add** then new to create  a new script. 
+
+
+# Xrm API object
+* ![Alt text](image-1.png)
+* ![Alt text](image-2.png)
+* ![Understand the Client API object model](image-3.png)
