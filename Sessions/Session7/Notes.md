@@ -1,4 +1,4 @@
-# Processes Notes.
+# Workflows Notes.
 * open process. 
 * insert the process name. 
 * good conventions: 
@@ -48,3 +48,62 @@
      *  the owner of this record is changed. 
   *  Record fields change:
   *  Record is deleted:
+  *  we can choose more than one. 
+* if we pressed on the Convert to real time. 
+  * htla22y fe shwyt 7agat tel3t gededa, zy drop down keda 
+    * start when:
+      * by2olk 3auz tnfz el process emta
+        * after .
+        * before.
+      * htla2y fe 3 mrboten bb3d
+        * Record status changes
+        * Record is assigned 
+        * Record fields change 
+    * workflow log retention
+      * nfs el fekra bta3t eno yems7 el success 34an ywfr msa7a. 
+# Creating the process
+* Add step: 
+  * choose check condition: da 3bara 3n if 3adya. 
+    * 3ndna 3 options:
+      * Primary entity.
+        * de el entity elly wna b3ml el process e5trtha. 
+      * Related entity.
+        * de el entities elly fe ben el Primary entity w hya relationship. 
+      * Local Value. 
+        * lw ekhtrt process 
+          * htla2y fe fields 5asa bl process
+            * Activity Count.
+            * Activity Count including process. 
+            * Execution Time -> el w2t el etnfzt feh el workflow. 
+  * btbd2 baa t7ot conditions. 
+  * e3ml Entity w e5tar el field w shof el condition statement w t7ot el value baa w keda. 
+
+* The available options in add step:
+  * Create Record: bn7ot record geded fe entity. zy  account record gdeda msln. 
+    * mmkn wna b3ml new record, akhleh y3ml mapping le fields abl keda. 
+    * fa 34an ne3ml keda, bnro7 3la look for, w ne5tar el field elly hwa 3auz ygeb meno el value. 
+    * w mmkn n7ot kema mo3yna e7na el bn7otha beidna. 
+    * lw 3auz else if -> choose conditional branch
+    * lw 3auz else -> Default action. 
+  * Update Record:
+    * y2ma bn3ml update fl Primary entity
+    * aw fl Related Entities. 
+  * Asign Record:   
+    * bn8yr el owner of this record.
+      * user.
+      * team.
+  * Perform action: 
+    * bandah 3la action 34an yetnfz 3nd step mo3yna. 
+  * start child workflow:
+    * btl3lk list feha kol el children processes. 
+  * stop workflow 
+    * 3auz a7ot condition lw et722 a5leh yw2f el workflow khlas mykmlsh. 
+  * Custom workflows:
+    * 3mlt workflow bl C# w sayvtha fl system w b5tar enhom yetnfzo. 
+    * w de b2dr andh 3leha t7t ay workflow. 
+    * w bta5ud input (from field)
+    * w btrg3ly output, byb2a 3bara 3n field.
+    * dayman el input aw el output byb2o fields. 
+  * we should always write the description for the workflow because after while, we will forget the logic.   
+* de more generic than the business rules. 
+* we come to this before we go to the java script codes. 
