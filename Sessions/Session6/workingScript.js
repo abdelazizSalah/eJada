@@ -5,7 +5,7 @@ function websiteValidator(executionContext) {
 
 
     var website = formContext.getAttribute('websiteurl').getValue();
-    const errorOptions = {
+    var errorOptions = {
         details: "The inserted URL is not correct\nPlease make sure that you follow this format www.(YourWebsiteName).(YourHostName)",
         errorCode: -1,
         message: 'Correct the URL and try again'
@@ -21,8 +21,8 @@ function websiteValidator(executionContext) {
         //     }
         // );
         // regex checker. 
-        const regex = RegExp('^www\.[a-zA-Z]+\.(com|org|net)$');
-        let valid = regex.test(website);
+        var regex = RegExp('^www\.[a-zA-Z]+\.(com|org|net)$');
+        var valid = regex.test(website);
         if (valid)
             // return true;
             console.log("valid");
@@ -42,20 +42,24 @@ function websiteValidator(executionContext) {
 };
 
 function mustProvidePhoneNumber(executionContext) {
+    debugger;
     // create form object
     var formContext = executionContext.getFormContext();
 
     // define the utility items for alert dialog
-    const alertStrings = { confirmButtonLabel: "OK", text: "You must insert a phone number." };
-    const alertOptions = { height: 120, width: 260 };
+    var alertStrings = { confirmButtonLabel: "OK", text: "You must insert a phone number." };
+    var alertOptions = { height: 120, width: 260 };
 
     // get the phone number
-    let phoneNumber = formContext.getAttribute('telephone1').getValue();
+    var phoneNumber = formContext.getAttribute('telephone1').getValue();
 
     if (phoneNumber !== null && phoneNumber !== '') {
+        alert('correct Form');
         console.log("Provided a phone number");
         // return true;
-    } else {
+    }
+    else {
+        alert('Incorrect Form');
         Xrm.Navigation.openAlertDialog(alertStrings, alertOptions).then(
             function (success) {
                 console.log("Alert dialog closed");
