@@ -21,3 +21,10 @@
 > el hadaf mn el task  da enk ttb2 kol el enta 3arfo. 
 
 > wl hadaf mn el assignment enk tgeb akhrak fe kol haga w ttl3 a7sn ma 3ndk, fa lw 3tlt search, lw 3tlt es2l zmaylk, 3tlto koloko es2lo el seniors baa. 
+
+# Some other notes 
+* when we create a new solution for ribbon, we do not include all the assets 
+* that is because Add all aserts means that you took the entity and its views , charts , relationships,....  .you can choose this option only in case you want to move this entity to another environment
+* You can choose option (include entity meta data) only without choosing any of forms or views or anything related to entity , that means you now treat with entity table itself
+* And when you press ok, a warning message will appear to you informing you that there are some required components related to what you have choose and appear to you below , do you want to include them . But because we want what we choose only we say No
+* It means that ribon workbench sees that there are some required component related to what you have choose and appear to you below , do you want ribon workbench to include them . But because we want what we choose only we say No
