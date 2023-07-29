@@ -38,40 +38,41 @@
 
 function CallingCustomActionFromJavaScript() {
     debugger;
-    // get the current organization url 
-    var globalContext = Xrm.Utility.getGlobalContext();
-    var serverUrl = globalContext.getClientUrl();
+    // // get the current organization url 
+    // var globalContext = Xrm.Utility.getGlobalContext();
+    var serverUrl = Xrm.Page.context.getClientUrl();
 
-    // query to send the request to the global action 
-    // global action unique name - this name is case sensitive
+    // // query to send the request to the global action 
+    // // global action unique name - this name is case sensitive
     var actionName = "new_action_trial";
 
-    // set the current loggedin userid into _inputParameter of the action
-    var _inputParameterValue = globalContext.userSettings.userId;
+    // // set the current loggedin userid into _inputParameter of the action
+    // var _inputParameterValue = globalContext.userSettings.userId;
 
-    // pass the input parameters to action 
-    var inputData = {
-        "do_the_logic_input": 1
-    };
+    // // pass the input parameters to action 
+    // var inputData = {
+    //     "do_the_logic_input": 1
+    // };
 
     // create the HTTPrequest 
     var req = new XMLHttpRequest();
-    req.open("POST", serverUrl + "/api/data/v9.2/" + actionName, true);
-    req.setRequestHeader("Accept", "application/json");
-    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.open("POST", serverUrl + "/api/data/v9.1/" + actionName, true);
     req.setRequestHeader("OData-MaxVersion", "4.0");
     req.setRequestHeader("OData-Version", "4.0");
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
 
 
     req.onreadystatechange = function () {
-        if (this.readyState == 4 /* completed successfully */) {
+        if (this.readyState === 4 /* completed successfully */) {
             req.onreadystatechange = null;
-            if (this.status == 200 || this.status == 204) {
+            if (this.status === 200) {
                 // success callback
                 alert("Action has been called successfully");
                 var result = JSON.parse(this.response);
                 console.log(result);
                 alert(result.theStatus); // output parameter
+                formContext.data.entity.save();
             } else {
                 var error = JSON.parse(this.response).error;
                 console.log(" An error has occured in the action :\n\n" + error.message);
@@ -81,5 +82,5 @@ function CallingCustomActionFromJavaScript() {
 
     // execute the request
     // this will send a javascript request to the defined api. 
-    req.send(window.JSON.stringify(inputData));
+    req.send(JSON.stringify(inputData));
 }
