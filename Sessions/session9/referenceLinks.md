@@ -1,0 +1,1 @@
+[Errors in sending Requests through JS](https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-apps/dataverse/web-api-client-errors)
