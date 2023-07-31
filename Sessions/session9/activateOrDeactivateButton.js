@@ -49,7 +49,7 @@ function CallingCustomActionFromJavaScript() {
 
     // (companyURL).dynamics.com
     var serverUrl = globalContext.getClientUrl();
-    var actionName = "new_action_trial";
+    var actionName = "new_TogglingStatucAction";
 
     /*
         entity specific action.
@@ -58,7 +58,7 @@ function CallingCustomActionFromJavaScript() {
 
     */
     var query =
-        "zuz_hospitals(" + Id + ")/Microsoft.Dynamics.CRM." + actionName;
+        "zuz_actionbuttonentity(" + Id + ")/Microsoft.Dynamics.CRM." + actionName;
 
     // // query to send the request to the global action 
     // // global action unique name - this name is case sensitive
@@ -70,6 +70,7 @@ function CallingCustomActionFromJavaScript() {
     // var inputData = {
     //     "do_the_logic_input": 1
     // };
+
     // create the HTTPrequest 
     var req = new XMLHttpRequest();
     // open means that we are going to send a request to the server
@@ -99,21 +100,18 @@ function CallingCustomActionFromJavaScript() {
                 alert("Action has been called successfully");
                 // var result = JSON.parse(this.response);
                 // console.log(result);
-                alert(result.theStatus); // output parameter
-                Xrm.Page.data.entity.save();
+                // alert(result.theStatus); // output parameter
 
+                Xrm.Page.data.entity.save();
                 // Refresh data to see changes
                 Xrm.Page.data.refresh(true);
-                Xrm.Page.data.refresh(true);
-                Xrm.Page.data.refresh(true);
+
                 return true;
             } else {
                 var error = JSON.parse(this.response).error;
                 console.log(" An error has occured in the action :\n\n" + error.message);
                 return false;
             }
-        } else {
-            alert('An error has occured in the action');
         }
     }
 
