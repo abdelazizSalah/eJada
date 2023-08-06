@@ -1,4 +1,4 @@
-# Extending Workflows
+# Extending Workflows using coding activity
 * we extend workflows to be able to control multiple records not only one record or one field. 
 * to create a project:
   * Class Library (.NET Framework)
@@ -56,6 +56,13 @@
 * you will find the customized workflow steps, select yours!
 
 # How can we open the tracing
-* go to the settings
-* go to system settings
+* go to the settings.
+* go to administrations.
+* go to system settings.
 * select the All on the Plug in crossponding option set. 
+
+
+# Differences between it and the plug in
+* the plug in is more powerful than the workflow.
+* the plug in can not be added as a step in the workflow.
+* search... 
