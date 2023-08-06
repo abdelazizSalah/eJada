@@ -1,5 +1,7 @@
 // Valid website script
 function websiteValidator(executionContext) {
+
+  debugger;
   // create form object
   var formContext = executionContext.getFormContext();
 
@@ -43,6 +45,7 @@ function websiteValidator(executionContext) {
 }
 
 function mustProvidePhoneNumber(executionContext) {
+  debugger;
   // create form object
   var formContext = executionContext.getFormContext();
 

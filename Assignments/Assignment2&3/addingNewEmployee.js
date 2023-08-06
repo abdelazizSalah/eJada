@@ -8,7 +8,6 @@ function addNewEmployee(executionContext) {
 
     // we need to open the url in a new window
     window.open(url, "_blank");
-
 }
 
 
