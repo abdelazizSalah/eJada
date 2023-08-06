@@ -12,6 +12,12 @@ namespace UpdateAccount
     public class UpdatePhone : CodeActivity
     {
         // lazm te3ml signature lel class bta3k
+        /*
+         * ehna gowa el dynamics nfso bndho 3leh, fa brbto be action aw work 
+         * Hytl3lk file esmo dll file.
+         * 
+         * CodeActivityContext da el bigClass eelly gowah baa kol el el services aw el contxt w keda. 
+         */
         protected override void Execute(CodeActivityContext context)
         {
             // de btgebly el parameters elly mwgoda fl system w2t ma get andh 3la el workflow. 

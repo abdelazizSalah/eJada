@@ -6,3 +6,5 @@
   * C#
   * Relationship
 * lazm ykon feh relationship benhom aham haga
+* nshof ezay ne2dr nst5dm el input & output parameters for the Plug-in Trace log. 
+  * in C#. 
