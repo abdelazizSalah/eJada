@@ -12,10 +12,12 @@ function addNewEmployee(executionContext) {
 
 
 function videoSteps() {
+    debugger;
     var entityFormOptions = {};
 
-    entityFormOptions.entityName = "zuz_employee";
-    entityFormOptions.formId = "6E26E455-7170-49D8-8268-2D6FA572EB15";
+    entityFormOptions.entityName = "new_employee";
+    // entityFormOptions.formId = "6E26E455-7170-49D8-8268-2D6FA572EB15";
+    entityFormOptions.formId = "913A8CA2-2175-4BC2-A188-D2EF139FB89C";
     entityFormOptions.openInNewWindow = true;
 
 
