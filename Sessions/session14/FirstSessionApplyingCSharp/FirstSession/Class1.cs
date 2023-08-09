@@ -74,8 +74,13 @@ namespace UpdateAccount
             Entity updatedAccount = new Entity(entityName, recordId); // lazm wnta bt3ml new entity, tb3t el esm bta el entity elly enta htshtghl 3leha w kman teb3t el id bta3ha. 
             updatedAccount["telephone1"] =  "01153705735";
             // updating the records 
-            service.Update(updatedAccount); 
-            throw new NotImplementedException();
+            service.Update(updatedAccount);
+
+            phone = accountRecord.GetAttributeValue<string>("telephone1");
+            tracingService.Trace("The new Phone Number : " + phone);
+            tracingService.Trace("The Record Should be updated");
+
+
         }
     }
 }

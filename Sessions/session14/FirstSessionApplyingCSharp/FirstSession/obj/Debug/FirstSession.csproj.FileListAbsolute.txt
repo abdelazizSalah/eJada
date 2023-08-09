@@ -1,6 +1,5 @@
 C:\GitHub\eJada\Sessions\session14\FirstSessionApplyingCSharp\FirstSession\bin\Debug\FirstSession.dll
 C:\GitHub\eJada\Sessions\session14\FirstSessionApplyingCSharp\FirstSession\bin\Debug\FirstSession.pdb
-C:\GitHub\eJada\Sessions\session14\FirstSessionApplyingCSharp\FirstSession\obj\Debug\FirstSession.csprojAssemblyReference.cache
 C:\GitHub\eJada\Sessions\session14\FirstSessionApplyingCSharp\FirstSession\obj\Debug\FirstSession.csproj.CoreCompileInputs.cache
 C:\GitHub\eJada\Sessions\session14\FirstSessionApplyingCSharp\FirstSession\obj\Debug\FirstSession.dll
 C:\GitHub\eJada\Sessions\session14\FirstSessionApplyingCSharp\FirstSession\obj\Debug\FirstSession.pdb
