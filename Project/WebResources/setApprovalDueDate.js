@@ -1,12 +1,7 @@
-function setApprovalDueDate(executionContext) {
+function setApprovalDueDate() {
     debugger;
-    var formContext = executionContext.getFormContext();
-
-    // get the current date 
     var currentDate = new Date();
-
-    // set the Approval due date with the current month
-    formContext.getAttribute("eja_approvalduedate").setValue("26-" + currentDate.getMonth() + "-" + currentDate.getFullYear());
+    Xrm.Page.getAttribute("eja_approvaldate").setValue(new Date(currentDate.getFullYear(), currentDate.getMonth(), 26));
 
     // save the form
     formContext.data.entity.save();

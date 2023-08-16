@@ -1,14 +1,14 @@
 // @Author Abdelaziz Salah. 
 function TimesheetIdLock() {
-    Xrm.Page.getControl("eja_name").setDisabled(true);
+    Xrm.Page.getControl("eja_timesheetid").setDisabled(true);
 }
 
 function TimesheetIdSet() {
     debugger;
-    var timesheetIdAttribute = Xrm.Page.getAttribute("eja_name");
+    var timesheetIdAttribute = Xrm.Page.getAttribute("eja_timesheetid");
 
     if (timesheetIdAttribute && timesheetIdAttribute.getValue() === null) {
-        var entityName = "eja_timesheets";
+        var entityName = "eja_timesheetas";
 
         var req = new XMLHttpRequest();
 
@@ -27,7 +27,7 @@ function TimesheetIdSet() {
                 req.onreadystatechange = null;
                 if (this.status === 200) {
                     var recordCount = JSON.parse(this.responseText)["@odata.count"];
-
+                    recordCount += 1;
                     console.log("Total Records: " + recordCount);
 
                     timesheetIdAttribute.setValue(recordCount.toString());
