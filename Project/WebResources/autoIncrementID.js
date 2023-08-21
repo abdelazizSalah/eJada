@@ -1,4 +1,5 @@
-// @Author Abdelaziz Salah. 
+// @Author: Abdelaziz Salah 
+// @Date: 16/8/2023
 function TimesheetIdLock() {
     Xrm.Page.getControl("eja_timesheetid").setDisabled(true);
 }

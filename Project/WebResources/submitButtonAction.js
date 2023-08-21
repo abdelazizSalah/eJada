@@ -1,3 +1,5 @@
+// @Author: Abdelaziz Salah 
+// @Date: 16/8/2023
 function disableTheSubgrid() {
     var section = Xrm.Page.ui.tabs.get("timesheet_body").sections.get("timesheet_tasks");
     var controls = section.controls.get();

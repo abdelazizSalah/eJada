@@ -1,3 +1,5 @@
+// @Author: Abdelaziz Salah 
+// @Date: 16/8/2023
 function setRejectedBy() {
     // getting the owner field. 
     var ownerFiled = Xrm.Page.getAttribute("eja_rejected_by");

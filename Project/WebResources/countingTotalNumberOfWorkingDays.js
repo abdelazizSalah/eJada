@@ -1,3 +1,5 @@
+// @Author: Abdelaziz Salah 
+// @Date: 16/8/2023
 function countDaysExcludingFridaysAndThursdays(year, month) {
     const daysInMonth = new Date(year, month - 1, 0).getDate();
     console.log(daysInMonth);

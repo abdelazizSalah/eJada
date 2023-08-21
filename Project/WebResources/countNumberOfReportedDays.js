@@ -1,3 +1,5 @@
+// @Author: Abdelaziz Salah 
+// @Date: 16/8/2023
 function countReportedDays(executionContext) {
     var formContext = executionContext.getFormContext();
     var reportedDays = formContext.getAttribute("eja_reporteddays").getValue();
